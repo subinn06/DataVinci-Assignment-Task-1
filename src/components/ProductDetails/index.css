@@ -115,3 +115,9 @@
 .cert-grid img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .cert-grid {
+  gap: 50px;
+  }
+}

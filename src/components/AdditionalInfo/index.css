@@ -13,3 +13,9 @@
   object-fit: contain;
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .info-img {
+  width: 560px;
+  }
+}

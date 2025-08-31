@@ -70,10 +70,19 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  width: 300px;
+  width: 340px;
   text-align: center;
 }
 
 .add-to-cart:hover {
   background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .option-img {
+  width: 560px;
+  }
+  .add-to-cart {
+    width: 300px;
+  }
 }
