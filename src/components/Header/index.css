@@ -1,0 +1,165 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 5%;
+  background: #fdfcf9;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.quiz-btn {
+  background: none;
+  border: 1px solid #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.quiz-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.nav-left {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-left a:hover {
+  color: #000;
+}
+
+.header-center {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 75px;
+  object-fit: contain;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #000;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+.cart-wrapper {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #f9b233;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    width: 140%;
+  }
+
+  .header-center img {
+    height: 100px;
+  }
+ 
+  .header-left {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+}

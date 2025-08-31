@@ -1,0 +1,25 @@
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  padding: 2rem 5%;
+  align-items: start;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .right-column {
+    gap: 1.5rem;
+  }
+}
